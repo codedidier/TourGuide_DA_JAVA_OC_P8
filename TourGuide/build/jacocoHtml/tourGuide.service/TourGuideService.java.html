@@ -51,7 +51,7 @@ public class TourGuideService {
 <span class="fc" id="L51">	}</span>
 	
 	public List&lt;UserReward&gt; getUserRewards(User user) {
-<span class="nc" id="L54">		return user.getUserRewards();</span>
+<span class="fc" id="L54">		return user.getUserRewards();</span>
 	}
 	
 	public VisitedLocation getUserLocation(User user) {
@@ -141,12 +141,12 @@ public class TourGuideService {
 		}
 
 	public List&lt;Attraction&gt; getNearByAttractions(VisitedLocation visitedLocation) {
-<span class="nc" id="L144">			List&lt;Attraction&gt; attractions = gpsUtil.getAttractions();</span>
+<span class="fc" id="L144">			List&lt;Attraction&gt; attractions = gpsUtil.getAttractions();</span>
 			// Recommandez les cinq attractions touristiques les plus proches :
-<span class="nc" id="L146">			return attractions.stream()</span>
-<span class="nc" id="L147">					.sorted(Comparator.comparing(attraction -&gt; rewardsService.getDistance(visitedLocation.location, attraction)))</span>
-<span class="nc" id="L148">					.limit(5)</span>
-<span class="nc" id="L149">					.collect(Collectors.toList());</span>
+<span class="fc" id="L146">			return attractions.stream()</span>
+<span class="fc" id="L147">					.sorted(Comparator.comparing(attraction -&gt; rewardsService.getDistance(visitedLocation.location, attraction)))</span>
+<span class="fc" id="L148">					.limit(5)</span>
+<span class="fc" id="L149">					.collect(Collectors.toList());</span>
 		}
 	
 	private void addShutDownHook() {
