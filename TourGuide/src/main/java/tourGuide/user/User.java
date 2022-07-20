@@ -64,6 +64,10 @@ public class User {
 	public List<VisitedLocation> getVisitedLocations() {
 		return visitedLocations;
 	}
+	public void setVisitedLocations(List<VisitedLocation> visitedLocations) {
+		this.visitedLocations.clear();
+		this.visitedLocations.addAll(visitedLocations);
+	}
 	
 	public void clearVisitedLocations() {
 		visitedLocations.clear();

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tourGuide.TestRewardsService" tests="3" skipped="1" failures="0" errors="0" timestamp="2022-07-20T09:18:09" hostname="DESKTOP-SUJD6MH" time="0.837">
+  <properties/>
+  <testcase name="nearAllAttractions" classname="tourGuide.TestRewardsService" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="userGetRewards" classname="tourGuide.TestRewardsService" time="0.821"/>
+  <testcase name="isWithinAttractionProximity" classname="tourGuide.TestRewardsService" time="0.015"/>
+  <system-out><![CDATA[11:18:09.065 [Test worker] INFO tourGuide.service.TourGuideService - TestMode enabled
+11:18:09.065 [Test worker] DEBUG tourGuide.service.TourGuideService - Initializing users
+11:18:09.067 [Test worker] DEBUG tourGuide.service.TourGuideService - Created 0 internal test users.
+11:18:09.067 [Test worker] DEBUG tourGuide.service.TourGuideService - Finished initializing users
+11:18:09.068 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Begin Tracker. Tracking 0 users.
+11:18:09.068 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker Time Elapsed: 0 seconds.
+11:18:09.068 [pool-3-thread-1] DEBUG tourGuide.tracker.Tracker - Tracker sleeping
+rewards = 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
