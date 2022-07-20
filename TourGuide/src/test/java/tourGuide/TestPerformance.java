@@ -2,13 +2,11 @@ package tourGuide;
 
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.time.StopWatch;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -43,7 +41,11 @@ public class TestPerformance {
      *     highVolumeGetRewards: 100,000 users within 20 minutes:
 	 *          assertTrue(TimeUnit.MINUTES.toSeconds(20) >= TimeUnit.MILLISECONDS.toSeconds(stopWatch.getTime()));
 	 */
-	
+	@Before
+	public void init() {
+		Locale.setDefault(Locale.US);
+	}
+
 	@Ignore
 	@Test
 	public void highVolumeTrackLocation() {
