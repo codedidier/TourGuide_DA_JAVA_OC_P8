@@ -3,6 +3,7 @@ package tourGuide.service;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
@@ -30,14 +31,14 @@ import tripPricer.TripPricer;
 @Service
 public class TourGuideService {
 	private Logger logger = LoggerFactory.getLogger(TourGuideService.class);
-	private final GpsUtil gpsUtil;
+	private final GpsUtilService gpsUtilService;
 	private final RewardsService rewardsService;
 	private final TripPricer tripPricer = new TripPricer();
 	public final Tracker tracker;
 	boolean testMode = true;
 	
-	public TourGuideService(GpsUtil gpsUtil, RewardsService rewardsService) {
-		this.gpsUtil = gpsUtil;
+	public TourGuideService(GpsUtilService gpsUtilService, RewardsService rewardsService) {
+		this.gpsUtilService = gpsUtilService;
 		this.rewardsService = rewardsService;
 		
 		if(testMode) {
@@ -57,7 +58,7 @@ public class TourGuideService {
 	public VisitedLocation getUserLocation(User user) {
 		VisitedLocation visitedLocation = (user.getVisitedLocations().size() > 0) ?
 			user.getLastVisitedLocation() :
-			trackUserLocation(user);
+				gpsUtilService.getUserLocation(user).join();
 		return visitedLocation;
 	}
 
@@ -89,12 +90,13 @@ public class TourGuideService {
 		user.setTripDeals(providers);
 		return providers;
 	}
-	
-	public VisitedLocation trackUserLocation(User user) {
-		VisitedLocation visitedLocation = gpsUtil.getUserLocation(user.getUserId());
-		user.addToVisitedLocations(visitedLocation);
-		rewardsService.calculateRewards(user);
-		return visitedLocation;
+	public CompletableFuture<VisitedLocation> trackUserLocation(User user) {
+		return gpsUtilService.getUserLocation(user)
+				.thenApply(visitedLocation -> {
+					user.addToVisitedLocations(visitedLocation);
+					rewardsService.calculateRewards(user);
+					return visitedLocation;
+				});
 	}
 	public UserPreferences getUserPreferences(String userName) {
 		return getUser(userName).getUserPreferences();
@@ -141,7 +143,7 @@ public class TourGuideService {
 		}
 
 	public List<Attraction> getNearByAttractions(VisitedLocation visitedLocation) {
-			List<Attraction> attractions = gpsUtil.getAttractions();
+			List<Attraction> attractions = gpsUtilService.getAttractions();
 			// Recommandez les cinq attractions touristiques les plus proches :
 			return attractions.stream()
 					.sorted(Comparator.comparing(attraction -> rewardsService.getDistance(visitedLocation.location, attraction)))

@@ -708,6 +708,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.64/8e8d770cdfa4f109eb6f2aa644318bd0157bb2c4/tomcat-embed-websocket-9.0.64-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.apiguardian:apiguardian-api:1.0.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/3ef5276905e36f4d8055fe3cb0bdcc7503ffc85d/apiguardian-api-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/777508fa9f3e03cafb3c1fb2eba3dca317f4b1ee/apiguardian-api-1.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.apiguardian:apiguardian-api:1.1.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar!/" />
@@ -753,15 +762,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/2.2/260c1224a39af35b0dbf85201647125f25f1b40d/hamcrest-core-2.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.hamcrest:hamcrest-library:1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/47a7ee46628ab7133129cd7cef1e92657bc275e/hamcrest-library-1.3-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: org.hamcrest:hamcrest:2.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar!/" />
@@ -789,15 +789,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.17.Final/7018c4feae164e19041a968e4d1e5576008b264f/hibernate-validator-6.0.17.Final-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.javamoney.moneta:moneta-convert-ecb:1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-ecb/1.3/4a29ee6b41e1cba74870d8f767b881ebf9140db2/moneta-convert-ecb-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-ecb/1.3/d098965d287ef664327e6010dec2c58c990e7674/moneta-convert-ecb-1.3-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: org.javamoney.moneta:moneta-convert-ecb:1.4.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-ecb/1.4.2/4af1ee7258ad6ad7270200ff308028211d403ae6/moneta-convert-ecb-1.4.2.jar!/" />
@@ -805,15 +796,6 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-ecb/1.4.2/85cacf217f271eba4b56661dc6f7e2350125253b/moneta-convert-ecb-1.4.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.javamoney.moneta:moneta-convert-imf:1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-imf/1.3/44f5314faee63b05363bf884491491f109a8cbdd/moneta-convert-imf-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-imf/1.3/c231bf6af94f19927643c56140a79d212998d03/moneta-convert-imf-1.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.javamoney.moneta:moneta-convert-imf:1.4.2">
@@ -825,15 +807,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert-imf/1.4.2/2018137190111688e824ab17ae53d859886cac1c/moneta-convert-imf-1.4.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.javamoney.moneta:moneta-convert:1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert/1.3/96dfd490f04d004eca37cc5197db17895dbe3ba1/moneta-convert-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert/1.3/df85a898e611b6c2149658575ed708eb70fefe7a/moneta-convert-1.3-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: org.javamoney.moneta:moneta-convert:1.4.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert/1.4.2/ce0fa703757682dbf1d5777d52d2ae0c6e758ba/moneta-convert-1.4.2.jar!/" />
@@ -841,15 +814,6 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-convert/1.4.2/71a7bea67d377fb0779d6fdf6061259f16fe8bd6/moneta-convert-1.4.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.javamoney.moneta:moneta-core:1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-core/1.3/8732a94cc8b6758856e7b448e4e3eb105bc6a20a/moneta-core-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javamoney.moneta/moneta-core/1.3/ad5c82a44df914b2d8a2241bad295479caab4776/moneta-core-1.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.javamoney.moneta:moneta-core:1.4.2">
@@ -870,6 +834,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/a44f0f22bbd9ccb96952806e73f6cc16ef7d2f67/jboss-logging-3.3.2.Final-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.3.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.3.2/3602b523ffae9dabc04c329d73ab39ab04b3cbe2/junit-jupiter-api-5.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.3.2/77c667ed802af6253c68910b6cadfd973f3c6d0b/junit-jupiter-api-5.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.8.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.2/4c21029217adf07e4c0d0c5e192b6bf610c94bdc/junit-jupiter-api-5.8.2.jar!/" />
@@ -879,6 +852,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.2/429d353563c5fb35a3d47076bedbf75161e976c2/junit-jupiter-api-5.8.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.3.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.3.2/69350316a14c46d8f6c4c909e469ec9edf58c4f8/junit-jupiter-engine-5.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.3.2/3d1af92523b01820ee1f99fad188ae361172d089/junit-jupiter-engine-5.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.8.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.2/c598b4328d2f397194d11df3b1648d68d7d990e3/junit-jupiter-engine-5.8.2.jar!/" />
@@ -886,6 +868,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.2/ea87fe3d752e24397f71f347872e79a89c61a704/junit-jupiter-engine-5.8.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-params:5.3.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.3.2/606c97428ba94d06022cef6d0ae44e1eaff8ca3d/junit-jupiter-params-5.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.3.2/44888ca692386505d3d228dc89214972a8f35d8d/junit-jupiter-params-5.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.junit.jupiter:junit-jupiter-params:5.8.2">
@@ -906,6 +897,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.8.2/5fd01c33132462aab3905cb74bd1097a713ab91a/junit-jupiter-5.8.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.junit.platform:junit-platform-commons:1.3.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.3.2/378d1d1b162426ad031522f6d51e3bf28d1631a4/junit-platform-commons-1.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.3.2/58f3a24c0f76eda58df496649e27e242f0bc6b41/junit-platform-commons-1.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.junit.platform:junit-platform-commons:1.8.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.2/32c8b8617c1342376fd5af2053da6410d8866861/junit-platform-commons-1.8.2.jar!/" />
@@ -913,6 +913,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.2/386b61876dd33d0ef0381189d3c1db9455d99659/junit-platform-commons-1.8.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.platform:junit-platform-engine:1.3.2">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.3.2/c54bc1d4654bd1ef15fccf512ce664184085969/junit-platform-engine-1.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.3.2/ede8c4de1464c7c7c6aa4da5def7d5b614f25737/junit-platform-engine-1.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.junit.platform:junit-platform-engine:1.8.2">
@@ -951,6 +960,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.5.1/c08b438bd19ba98419cf7919ba63e909f75b71c/mockito-core-4.5.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.mockito:mockito-junit-jupiter:2.23.4">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/2.23.4/ef98774aa9d1eba7cb308d2956c221cb244ff70/mockito-junit-jupiter-2.23.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/2.23.4/e79d6860ca4fbc077fb66729b33e5950b591eaac/mockito-junit-jupiter-2.23.4-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.mockito:mockito-junit-jupiter:4.5.1">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.5.1/f81fb60bd69b3a6e5537ae23b883326f01632a61/mockito-junit-jupiter-4.5.1.jar!/" />
@@ -976,6 +994,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/9f5da90020a255f25b6d8da8db273e2d38ce9805/objenesis-3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.opentest4j:opentest4j:1.1.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/efd9f971e91074491ea55b19f67b13470cf4fcdd/opentest4j-1.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.1.1/88a3a2cb15c413565462cea99f201b67bc6d2f10/opentest4j-1.1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.opentest4j:opentest4j:1.2.0">
@@ -1124,13 +1151,6 @@
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.7.1/52535b678511814f27299ab130331c7c74b4cfbc/spring-boot-starter-logging-2.7.1-sources.jar!/" />
       </SOURCES>
-    </library>
-    <library name="Gradle: org.springframework.boot:spring-boot-starter-test:2.1.6.RELEASE">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.1.6.RELEASE/84ca9723624ade81ca04be40b96222e786790a89/spring-boot-starter-test-2.1.6.RELEASE.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
     </library>
     <library name="Gradle: org.springframework.boot:spring-boot-starter-test:2.7.0">
       <CLASSES>
