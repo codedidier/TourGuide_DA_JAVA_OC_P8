@@ -20,7 +20,7 @@ public class RewardsService {
 	ThreadPoolExecutor executorService = new ThreadPoolExecutor(
 			5,
 			8,
-			3,
+			1,
 			TimeUnit.SECONDS,
 			new LinkedBlockingQueue<>(3),
 			Executors.defaultThreadFactory(),
