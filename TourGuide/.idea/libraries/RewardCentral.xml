@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RewardCentral">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../reward-provider/reward-provider/libs/RewardCentral.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
