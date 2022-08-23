@@ -13,7 +13,7 @@ before_script:
   - export GRADLE_USER_HOME
 
 include:
-  - local: gps-provider/.gitlab-ci.yml
+  - local: TourGuide/gps-provider/.gitlab-ci.yml
   - local: reward-provider/.gitlab-ci.yml
   - local: guide-service/.gitlab-ci.yml
   - local: pricer-provider/.gitlab-ci.yml
