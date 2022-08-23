@@ -86,3 +86,4 @@ test-guide-service-module:
   extends:
     - .guide-service-module
     - .test-module
+    
