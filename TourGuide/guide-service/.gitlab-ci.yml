@@ -1,0 +1,6 @@
+.guide-service-module:
+  variables:
+    MODULE: "guide-service"
+  only:
+    changes:
+      - "guide-service/**/*"

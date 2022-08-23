@@ -1,0 +1,88 @@
+image: gradle:alpine
+
+stages:
+  - build
+  - test
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+  CACHE_KEY: "$CI_COMMIT_REF_NAME"
+
+before_script:
+  - GRADLE_USER_HOME="$(pwd)/.gradle"
+  - export GRADLE_USER_HOME
+
+include:
+  - local: gps-provider/.gitlab-ci.yml
+  - local: reward-provider/.gitlab-ci.yml
+  - local: guide-service/.gitlab-ci.yml
+  - local: pricer-provider/.gitlab-ci.yml
+
+cache:
+  key: $CACHE_KEY
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+.build-module:
+  stage: build
+  script:
+    - echo "Building $MODULE"
+    - gradle assemble -p $MODULE
+  cache:
+    policy: push
+  artifacts:
+    untracked: true
+    expire_in: 10 min
+    paths:
+      - build/libs/*.jar
+
+.test-module:
+  stage: test
+  script:
+    - echo "Testing $MODULE"
+    - gradle check -p $MODULE
+  cache:
+    policy: pull
+
+# BUILD JOBS
+build-gps-provider-module:
+  extends:
+    - .gps-provider-module
+    - .build-module
+
+build-reward-provider-module:
+  extends:
+    - .reward-provider-module
+    - .build-module
+
+build-pricer-provider-module:
+  extends:
+    - .pricer-provider-module
+    - .build-module
+
+build-guide-service-module:
+  extends:
+    - .guide-service-module
+    - .build-module
+
+# TEST JOBS
+test-gps-provider-module:
+  extends:
+    - .gps-provider-module
+    - .test-module
+
+test-reward-provider-module:
+  extends:
+    - .reward-provider-module
+    - .test-module
+
+test-pricer-provider-module:
+  extends:
+    - .pricer-provider-module
+    - .test-module
+
+test-guide-service-module:
+  extends:
+    - .guide-service-module
+    - .test-module

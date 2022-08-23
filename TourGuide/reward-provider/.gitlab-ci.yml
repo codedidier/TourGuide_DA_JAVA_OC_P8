@@ -1,0 +1,6 @@
+.reward-provider-module:
+  variables:
+    MODULE: "reward-provider"
+  only:
+    changes:
+      - "reward-provider/**/*"

@@ -1,0 +1,6 @@
+.pricer-provider-module:
+  variables:
+    MODULE: "pricer-provider"
+  only:
+    changes:
+      - "pricer-provider/**/*"
