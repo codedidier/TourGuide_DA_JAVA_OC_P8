@@ -14,9 +14,9 @@ before_script:
 
 include:
   - local: TourGuide/gps-provider/.gitlab-ci.yml
-  - local: reward-provider/.gitlab-ci.yml
-  - local: guide-service/.gitlab-ci.yml
-  - local: pricer-provider/.gitlab-ci.yml
+  - local: TourGuide/reward-provider/.gitlab-ci.yml
+  - local: TourGuide/guide-service/.gitlab-ci.yml
+  - local: TourGuide/pricer-provider/.gitlab-ci.yml
 
 cache:
   key: $CACHE_KEY
