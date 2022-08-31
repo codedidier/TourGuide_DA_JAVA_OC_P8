@@ -1,11 +1,12 @@
 package tourGuide;
 
-import gpsUtil.location.Attraction;
-import gpsUtil.location.VisitedLocation;
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import tourGuide.helper.InternalTestHelper;
+import tourGuide.model.location.Attraction;
+import tourGuide.model.location.VisitedLocation;
 import tourGuide.proxies.GpsFeignProxy;
 import tourGuide.proxies.PricerFeignProxy;
 import tourGuide.proxies.RewardFeignProxy;
@@ -19,9 +20,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+@SpringBootTest
 public class TestRewardsService {
 
 	@Autowired

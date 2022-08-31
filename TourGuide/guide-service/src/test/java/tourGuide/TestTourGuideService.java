@@ -1,14 +1,15 @@
 package tourGuide;
 
-import gpsUtil.location.Attraction;
-import gpsUtil.location.Location;
 import org.javamoney.moneta.Money;
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import tourGuide.dto.UserPreferencesDto;
 import tourGuide.helper.InternalTestHelper;
+import tourGuide.model.location.Attraction;
+import tourGuide.model.location.Location;
+import tourGuide.model.tripPricer.Provider;
 import tourGuide.proxies.GpsFeignProxy;
 import tourGuide.proxies.PricerFeignProxy;
 import tourGuide.proxies.RewardFeignProxy;
@@ -16,7 +17,6 @@ import tourGuide.service.RewardsService;
 import tourGuide.service.TourGuideService;
 import tourGuide.user.User;
 import tourGuide.user.UserPreferences;
-import tripPricer.Provider;
 
 import javax.money.Monetary;
 import java.util.List;
@@ -24,8 +24,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @SpringBootTest
 public class TestTourGuideService {
 

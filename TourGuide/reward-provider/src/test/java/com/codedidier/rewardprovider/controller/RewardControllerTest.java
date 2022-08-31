@@ -1,12 +1,12 @@
 package com.codedidier.rewardprovider.controller;
 
+import com.codedidier.rewardprovider.controller.RewardController;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.UUID;
-
 @SpringBootTest
 public class RewardControllerTest {
     @Autowired

@@ -8,7 +8,7 @@ import tripPricer.Provider;
 import java.util.List;
 import java.util.UUID;
 
-@FeignClient(value = "pricer-provider", url = "${pricer.serviceUrl}")
+@FeignClient(value = "pricer-provider", url = "localhost:8083")
 public interface PricerFeignProxy {
 
     @GetMapping("/price/{apiKey}/{attractionId}/{adults}/{children}/{nightsStay}/{rewardsPoints}")

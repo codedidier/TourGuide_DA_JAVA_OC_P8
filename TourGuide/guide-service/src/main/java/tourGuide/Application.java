@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import java.util.Locale;
 
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients("TourGuide")
 public class Application {
 
     public static void main(String[] args) {

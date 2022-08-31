@@ -1,6 +1,0 @@
-.gps-provider-module:
-  variables:
-    MODULE: "gps-provider"
-  only:
-    changes:
-      - "gps-provider/**/*"

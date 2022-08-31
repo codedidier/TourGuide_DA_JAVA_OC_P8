@@ -1,8 +1,5 @@
 package tourGuide.service;
 
-import gpsUtil.location.Attraction;
-import gpsUtil.location.Location;
-import gpsUtil.location.VisitedLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -10,13 +7,16 @@ import tourGuide.dto.RecommendAttraction;
 import tourGuide.dto.RecommendAttractionsDto;
 import tourGuide.dto.UserPreferencesDto;
 import tourGuide.helper.InternalTestHelper;
+import tourGuide.model.location.Attraction;
+import tourGuide.model.location.Location;
+import tourGuide.model.location.VisitedLocation;
+import tourGuide.model.tripPricer.Provider;
 import tourGuide.proxies.GpsFeignProxy;
 import tourGuide.proxies.PricerFeignProxy;
 import tourGuide.tracker.Tracker;
 import tourGuide.user.User;
 import tourGuide.user.UserPreferences;
 import tourGuide.user.UserReward;
-import tripPricer.Provider;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -27,7 +27,7 @@ import java.util.stream.IntStream;
 
 	@Service
 	public class TourGuideService {
-		private Logger logger = LoggerFactory.getLogger(TourGuideService.class);
+		private final Logger logger = LoggerFactory.getLogger(TourGuideService.class);
 		private final GpsFeignProxy gpsFeignProxy;
 		private final RewardsService rewardsService;
 		private final PricerFeignProxy pricerFeignProxy;
@@ -38,6 +38,7 @@ import java.util.stream.IntStream;
 			this.gpsFeignProxy = gpsFeignProxy;
 			this.rewardsService = rewardsService;
 			this.pricerFeignProxy = pricerFeignProxy;
+
 			if(testMode) {
 				logger.info("TestMode enabled");
 				logger.debug("Initializing users");

@@ -1,12 +1,13 @@
 package tourGuide;
 
-import gpsUtil.location.Attraction;
-import gpsUtil.location.VisitedLocation;
 import org.apache.commons.lang3.time.StopWatch;
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import tourGuide.helper.InternalTestHelper;
+import tourGuide.model.location.Attraction;
+import tourGuide.model.location.VisitedLocation;
 import tourGuide.proxies.GpsFeignProxy;
 import tourGuide.proxies.PricerFeignProxy;
 import tourGuide.proxies.RewardFeignProxy;
@@ -20,8 +21,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertTrue;
-
+import static org.junit.jupiter.api.Assertions.assertTrue;
+@SpringBootTest
 public class TestPerformance {
 	
 	/*
@@ -47,6 +48,7 @@ public class TestPerformance {
 	@Autowired
 	private GpsFeignProxy gpsFeignProxy;
 
+
 	@Autowired
 	private RewardFeignProxy rewardFeignProxy;
 
@@ -61,7 +63,7 @@ public class TestPerformance {
 	public void highVolumeTrackLocation() {
 		RewardsService rewardsService = new RewardsService(gpsFeignProxy, rewardFeignProxy);
 		// Users should be incremented up to 100,000, and test finishes within 15 minutes
-		InternalTestHelper.setInternalUserNumber(10000);
+		InternalTestHelper.setInternalUserNumber(100000);
 		TourGuideService tourGuideService = new TourGuideService(gpsFeignProxy, rewardsService, pricerFeignProxy);
 
 		List<User> allUsers = new ArrayList<>();
@@ -84,7 +86,7 @@ public class TestPerformance {
 		RewardsService rewardsService = new RewardsService(gpsFeignProxy, rewardFeignProxy);
 
 		// Users should be incremented up to 100,000, and test finishes within 20 minutes
-		InternalTestHelper.setInternalUserNumber(10000);
+		InternalTestHelper.setInternalUserNumber(100000);
 		StopWatch stopWatch = new StopWatch();
 		stopWatch.start();
 		TourGuideService tourGuideService = new TourGuideService(gpsFeignProxy, rewardsService, pricerFeignProxy);

@@ -1,9 +1,9 @@
 package tourGuide.service;
 
-import gpsUtil.location.Attraction;
-import gpsUtil.location.Location;
-import gpsUtil.location.VisitedLocation;
 import org.springframework.stereotype.Service;
+import tourGuide.model.location.Attraction;
+import tourGuide.model.location.Location;
+import tourGuide.model.location.VisitedLocation;
 import tourGuide.proxies.GpsFeignProxy;
 import tourGuide.proxies.RewardFeignProxy;
 import tourGuide.user.User;
@@ -82,6 +82,7 @@ public class RewardsService {
 	}
 	
 	public boolean isWithinAttractionProximity(Attraction attraction, Attraction location) {
+		int attractionProximityRange = 200;
 		return getDistance(attraction, location) > attractionProximityRange ? false : true;
 	}
 	

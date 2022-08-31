@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RecommendAttraction.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">guide-service</a> &gt; <a href="index.source.html" class="el_package">tourGuide.dto</a> &gt; <span class="el_source">RecommendAttraction.java</span></div><h1>RecommendAttraction.java</h1><pre class="source lang-java linenums">package tourGuide.dto;
+
+
+import tourGuide.model.location.Location;
+
+import java.io.Serializable;
+
+public class RecommendAttraction implements Serializable {
+
+    private String name;
+    private Location location;
+    private double distance;
+    private int rewardPoints;
+
+<span class="nc" id="L15">    public RecommendAttraction() {</span>
+<span class="nc" id="L16">    }</span>
+
+<span class="nc" id="L18">    public RecommendAttraction(String name, Location location, double distance, int rewardPoints) {</span>
+<span class="nc" id="L19">        this.name = name;</span>
+<span class="nc" id="L20">        this.location = location;</span>
+<span class="nc" id="L21">        this.distance = distance;</span>
+<span class="nc" id="L22">        this.rewardPoints = rewardPoints;</span>
+<span class="nc" id="L23">    }</span>
+
+    public String getName() {
+<span class="nc" id="L26">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="nc" id="L30">        this.name = name;</span>
+<span class="nc" id="L31">    }</span>
+
+    public Location getLocation() {
+<span class="nc" id="L34">        return location;</span>
+    }
+
+    public double getDistance() {
+<span class="nc" id="L38">        return distance;</span>
+    }
+
+    public void setDistance(double distance) {
+<span class="nc" id="L42">        this.distance = distance;</span>
+<span class="nc" id="L43">    }</span>
+
+    public int getRewardPoints() {
+<span class="nc" id="L46">        return rewardPoints;</span>
+    }
+
+    public void setRewardPoints(int rewardPoints) {
+<span class="nc" id="L50">        this.rewardPoints = rewardPoints;</span>
+<span class="nc" id="L51">    }</span>
+
+    public void setLocation(double latitude, double longitude) {
+<span class="nc" id="L54">        this.location = new Location(latitude, longitude);</span>
+<span class="nc" id="L55">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

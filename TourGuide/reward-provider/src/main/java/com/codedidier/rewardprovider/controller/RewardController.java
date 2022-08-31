@@ -14,7 +14,7 @@ public class RewardController {
     private RewardProviderService providerService;
 
     @GetMapping("/rewardpoints/{attractionId}/{userId}")
-    int getAttractionRewardPoints(@PathVariable("attractionId") UUID attractionId, @PathVariable("userId") UUID userId) {
+    public int getAttractionRewardPoints(@PathVariable("attractionId") UUID attractionId, @PathVariable("userId") UUID userId) {
         return providerService.getAttractionRewardPoints(attractionId, userId);
    }
 }

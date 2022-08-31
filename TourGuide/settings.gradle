@@ -12,5 +12,4 @@ include 'gps-provider'
 include 'reward-provider'
 include 'pricer-provider'
 include 'guide-service'
-include 'guide-service'
 
